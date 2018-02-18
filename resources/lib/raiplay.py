@@ -6,7 +6,9 @@ import os
 from tempfile import mkstemp
 from HTMLParser import HTMLParser
 
-class RaiPlay:
+from .browser import Browser
+
+class RaiPlay(Browser):
     # From http://www.raiplay.it/mobile/prod/config/RaiPlay_Config.json
     baseUrl = "http://www.rai.it/"
     channelsUrl = "http://www.rai.it/dl/RaiPlay/2016/PublishingBlock-9a2ff311-fcf0-4539-8f8f-c4fee2a71d58.html?json"

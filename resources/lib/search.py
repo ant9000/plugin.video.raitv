@@ -3,7 +3,9 @@ import json
 import urllib
 import urllib2
 
-class Search:
+from .browser import Browser
+
+class Search(Browser):
     baseUrl = "http://www.rai.it"
 
     newsArchives = {"TG1": "NomeProgramma:TG1^Tematica:Edizioni integrali",

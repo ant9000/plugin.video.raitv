@@ -1,7 +1,9 @@
 import urllib2
 from xml.dom import minidom
 
-class TGR:
+from .browser import Browser
+
+class TGR(Browser):
     _baseurl = "http://www.tgr.rai.it"
     
     def getProgrammes(self):
